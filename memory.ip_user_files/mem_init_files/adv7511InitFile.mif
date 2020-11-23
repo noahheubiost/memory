@@ -1,0 +1,53 @@
+- Always first register and then value
+- 0x41[6] = 0b0 for power-up
+4110
+- Fixed registers that must be set on power up
+9803
+9AE0
+9C30
+9D61
+A2A4
+A3A4
+E0D0
+F900
+- Video Format ID: YCbCr 4:2:2 DDR
+1506
+- Input Style 0x16[3:2] = Style 2
+- Data bit width 0x16[5:4] = 8bit
+- Data input edge 0x16[1] = 1st edge falling edge
+1635
+- Aspect ration 0x17[1] = 16x9
+1702
+- RGB
+5512
+- Input data left justified 0x48[4:3] = 0b10
+4810
+- Sync pulse
+D03C
+- HDCP (Encryption of data) and DVI mode 0xAF[1] = 0b0
+AF06
+- Color Conversion
+18E7
+1934
+1A04
+1BAD
+1C00
+1D00
+1E1C
+1F1B
+201D
+21DC
+2204
+23AD
+241F
+2524
+2601
+2735
+2800
+2900
+2A04
+2BAD
+2C08
+2D7C
+2E1B
+2F77

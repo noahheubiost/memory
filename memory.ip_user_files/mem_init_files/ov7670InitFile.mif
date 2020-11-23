@@ -1,0 +1,39 @@
+- Reset all register to their default value
+1280
+- Reset clock
+1100
+- Clear Reset Bit / Set RGB mode 
+1204
+- Output range: [00] to [FF] and RGB 565
+40D0
+- Set Color to RGB
+B084
+- No RGB444 Format
+8C00
+- Reset Clock --> divide clock by two
+1100
+- Set mirror, flip and black sun
+1E00
+1E0F
+- Black and White Pixel Correction enable
+76C1
+- Negative image
+3A0C
+- Enable AGC, AWB, ...
+1306
+144A
+- Enable filter
+3B10
+- Some magic register
+B084
+- Enable AGC, AWB, ...
+13E7
+6F9F
+- Saturation
+4F80
+5080
+5100
+5222
+535e
+5480
+589E
