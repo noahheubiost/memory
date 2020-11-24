@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Wed Nov 20 10:14:49 2019
---Host        : DT-MSE-500000 running 64-bit major release  (build 9200)
+--Date        : Tue Nov 24 14:08:33 2020
+--Host        : DESKTOP-38O5VOH running 64-bit major release  (build 9200)
 --Command     : generate_target cam2hdmi_bd_wrapper.bd
 --Design      : cam2hdmi_bd_wrapper
 --Purpose     : IP block netlist
@@ -34,17 +34,8 @@ entity cam2hdmi_bd_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    analog_cs : out STD_LOGIC;
-    analog_scl : out STD_LOGIC;
-    analog_sda : out STD_LOGIC;
-    cam_din : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    cam_href : in STD_LOGIC;
-    cam_pclk : in STD_LOGIC;
+    btns_5bits_0_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 );
     cam_pwdn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    cam_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    cam_sio_c : out STD_LOGIC;
-    cam_sio_d : inout STD_LOGIC;
-    cam_vsync : in STD_LOGIC;
     cam_xclk : out STD_LOGIC;
     clk_100MHz : in STD_LOGIC;
     hardReset : in STD_LOGIC;
@@ -54,15 +45,7 @@ entity cam2hdmi_bd_wrapper is
     hd_hsync : out STD_LOGIC;
     hd_scl : out STD_LOGIC;
     hd_sda : inout STD_LOGIC;
-    hd_vsync : out STD_LOGIC;
-    led : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    oled_dc : out STD_LOGIC;
-    oled_res : out STD_LOGIC;
-    oled_scl : out STD_LOGIC;
-    oled_sda : out STD_LOGIC;
-    oled_vbat : out STD_LOGIC;
-    oled_vdd : out STD_LOGIC;
-    switch : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    hd_vsync : out STD_LOGIC
   );
 end cam2hdmi_bd_wrapper;
 
@@ -72,7 +55,6 @@ architecture STRUCTURE of cam2hdmi_bd_wrapper is
     clk_100MHz : in STD_LOGIC;
     hardReset : in STD_LOGIC;
     cam_pwdn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    cam_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
     hd_scl : out STD_LOGIC;
     hd_sda : inout STD_LOGIC;
     hd_clk : out STD_LOGIC;
@@ -80,22 +62,7 @@ architecture STRUCTURE of cam2hdmi_bd_wrapper is
     hd_hsync : out STD_LOGIC;
     hd_d : out STD_LOGIC_VECTOR ( 15 downto 0 );
     hd_de : out STD_LOGIC;
-    cam_sio_c : out STD_LOGIC;
-    cam_sio_d : inout STD_LOGIC;
     cam_xclk : out STD_LOGIC;
-    cam_pclk : in STD_LOGIC;
-    cam_vsync : in STD_LOGIC;
-    cam_href : in STD_LOGIC;
-    cam_din : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    led : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    switch : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    oled_dc : out STD_LOGIC;
-    oled_res : out STD_LOGIC;
-    oled_vbat : out STD_LOGIC;
-    oled_vdd : out STD_LOGIC;
-    oled_scl : out STD_LOGIC;
-    analog_scl : out STD_LOGIC;
-    analog_sda : out STD_LOGIC;
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
@@ -117,8 +84,7 @@ architecture STRUCTURE of cam2hdmi_bd_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    oled_sda : out STD_LOGIC;
-    analog_cs : out STD_LOGIC
+    btns_5bits_0_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
   end component cam2hdmi_bd;
 begin
@@ -145,17 +111,8 @@ cam2hdmi_bd_i: component cam2hdmi_bd
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      analog_cs => analog_cs,
-      analog_scl => analog_scl,
-      analog_sda => analog_sda,
-      cam_din(7 downto 0) => cam_din(7 downto 0),
-      cam_href => cam_href,
-      cam_pclk => cam_pclk,
+      btns_5bits_0_tri_i(4 downto 0) => btns_5bits_0_tri_i(4 downto 0),
       cam_pwdn(0) => cam_pwdn(0),
-      cam_reset(0) => cam_reset(0),
-      cam_sio_c => cam_sio_c,
-      cam_sio_d => cam_sio_d,
-      cam_vsync => cam_vsync,
       cam_xclk => cam_xclk,
       clk_100MHz => clk_100MHz,
       hardReset => hardReset,
@@ -165,14 +122,6 @@ cam2hdmi_bd_i: component cam2hdmi_bd
       hd_hsync => hd_hsync,
       hd_scl => hd_scl,
       hd_sda => hd_sda,
-      hd_vsync => hd_vsync,
-      led(7 downto 0) => led(7 downto 0),
-      oled_dc => oled_dc,
-      oled_res => oled_res,
-      oled_scl => oled_scl,
-      oled_sda => oled_sda,
-      oled_vbat => oled_vbat,
-      oled_vdd => oled_vdd,
-      switch(7 downto 0) => switch(7 downto 0)
+      hd_vsync => hd_vsync
     );
 end STRUCTURE;

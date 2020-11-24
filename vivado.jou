@@ -42,3 +42,10 @@ connect_bd_net [get_bd_pins axiImage_0/d_out] [get_bd_pins roi_0/d_in]
 connect_bd_net [get_bd_pins axiImage_0/strobe_out] [get_bd_pins roi_0/strobe_in]
 save_bd_design
 update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+connect_bd_net [get_bd_pins adv7511_0/ram_addr_out] [get_bd_pins sdpRAM_0/b_addr_in]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
