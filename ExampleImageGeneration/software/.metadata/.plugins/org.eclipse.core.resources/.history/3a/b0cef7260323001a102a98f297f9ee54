@@ -1,0 +1,56 @@
+/**
+ ******************************************************************************
+ * main.c
+ * Lukas Leuenberger
+ * V1.0.0
+ * 18.12.2019
+ * This file contains the main functions
+ ******************************************************************************
+ **/
+
+/**
+ ******************************************************************************
+ * Include Files
+ ******************************************************************************
+ **/
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "axiImage.h"
+
+/**
+ ******************************************************************************
+ * Main function
+ ******************************************************************************
+ **/
+int main()
+{
+  u8 testData[256][256][3] = {0};
+  init_platform();
+
+  //print("Hello World\n\r");
+
+
+
+  // Test Data
+  while (1)
+  {
+    for (u16 h = 0; h < 256; ++h)
+    {
+      for (u16 v = 0; v < 256; ++v)
+      {
+        testData[h][v][0] = 0;
+        testData[h][v][1] = 0;
+        testData[h][v][2] = h;
+      }
+    }
+
+    AXIIMAGE_SendImageRGB888(256, 256, testData);
+  }
+
+
+
+  cleanup_platform();
+  return 0;
+}

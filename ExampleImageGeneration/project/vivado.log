@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 24 13:34:41 2020
+# Process ID: 2484
+# Current directory: C:/Users/nsheu/OneDrive/Desktop/DIGME/miniprojekt/ExampleImageGeneration/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16232 C:\Users\nsheu\OneDrive\Desktop\DIGME\miniprojekt\ExampleImageGeneration\project\exampleImageGeneration.xpr
+# Log file: C:/Users/nsheu/OneDrive/Desktop/DIGME/miniprojekt/ExampleImageGeneration/project/vivado.log
+# Journal file: C:/Users/nsheu/OneDrive/Desktop/DIGME/miniprojekt/ExampleImageGeneration/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nsheu/OneDrive/Desktop/DIGME/miniprojekt/ExampleImageGeneration/project/exampleImageGeneration.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Projekte/DigMe_ExampleImageGeneration/project' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_roi_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_sdpRAM_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_proc_sys_reset_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_clk_wiz_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_rainbowImage_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_compImage_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_mux_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_bmpImage_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_processing_system7_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_axiImage_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'exampleImageGeneration_adv7511_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/l1leuenb/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 791.477 ; gain = 94.141
+open_bd_design {C:/Users/nsheu/OneDrive/Desktop/DIGME/miniprojekt/ExampleImageGeneration/project/exampleImageGeneration.srcs/sources_1/bd/exampleImageGeneration/exampleImageGeneration.bd}
+Adding component instance block -- xilinx.com:module_ref:roi:1.0 - roi_0
+Adding component instance block -- xilinx.com:module_ref:sdpRAM:1.0 - sdpRAM_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:module_ref:rainbowImage:1.0 - rainbowImage_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:module_ref:bmpImage:1.0 - bmpImage_0
+Adding component instance block -- xilinx.com:module_ref:mux:1.0 - mux_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:module_ref:compImage:1.0 - compImage_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:module_ref:axiImage:1.0 - axiImage_0
+Adding component instance block -- xilinx.com:module_ref:adv7511:1.0 - adv7511_0
+Successfully read diagram <exampleImageGeneration> from BD file <C:/Users/nsheu/OneDrive/Desktop/DIGME/miniprojekt/ExampleImageGeneration/project/exampleImageGeneration.srcs/sources_1/bd/exampleImageGeneration/exampleImageGeneration.bd>
+open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 893.656 ; gain = 77.562
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 24 13:57:45 2020...

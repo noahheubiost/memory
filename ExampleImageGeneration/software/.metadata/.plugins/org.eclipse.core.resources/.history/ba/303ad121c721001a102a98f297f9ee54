@@ -1,0 +1,37 @@
+/**
+ ******************************************************************************
+ * axiImage.c
+ * Lukas Leuenberger
+ * V1.0.0
+ * 18.12.2019
+ * This file contains some functions to send an image to the programmable logic
+ ******************************************************************************
+ **/
+
+/**
+ ******************************************************************************
+ * Include Files
+ ******************************************************************************
+ **/
+#include <stdio.h>
+//#include "platform.h"
+//#include "xil_printf.h"
+//#include <Xparameters.h>
+#include <Xil_types.h>
+//#include <Xil_io.h>
+
+/**
+ ******************************************************************************
+ * Set Pixel
+ ******************************************************************************
+ **/
+void AXIIMAGE_SetPixelDirect(u32 x, u32 y, u16 color)
+{
+	// indicate which byte of the 32 bit word
+	// is edited
+	u8 ByteSelect = baseAddress & 0x00000003;
+	u32 tmp32;
+	tmp32 = Xil_In32(baseAddress & 0xFFFFFFFC); // address aligned
+	tmp32 |= (0x00000000 | bitPattern << (8 * ByteSelect));
+	Xil_Out32(baseAddress & 0xFFFFFFFC, tmp32);
+}

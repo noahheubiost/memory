@@ -1,0 +1,379 @@
+10:56:35 INFO  : Registering command handlers for SDK TCF services
+10:56:36 INFO  : Launching XSCT server: xsct.bat -interactive D:\Projekte\DigMe_ExampleImageGeneration\software\temp_xsdb_launch_script.tcl
+10:56:39 INFO  : XSCT server has started successfully.
+10:56:39 INFO  : Successfully done setting XSCT server connection channel  
+10:56:39 INFO  : Successfully done setting SDK workspace  
+10:56:39 INFO  : Processing command line option -hwspec D:/Projekte/DigMe_ExampleImageGeneration/hardware/exampleImageGeneration_wrapper.hdf.
+10:56:39 INFO  : Checking for hwspec changes in the project exampleImageGeneration_wrapper_hw_platform_0.
+10:57:08 INFO  : Registering command handlers for SDK TCF services
+10:57:09 INFO  : Launching XSCT server: xsct.bat -interactive D:\Projekte\DigMe_ExampleImageGeneration\software\temp_xsdb_launch_script.tcl
+10:57:12 INFO  : XSCT server has started successfully.
+10:57:12 INFO  : Successfully done setting XSCT server connection channel  
+10:57:12 INFO  : Successfully done setting SDK workspace  
+10:57:12 INFO  : Processing command line option -hwspec D:/Projekte/DigMe_ExampleImageGeneration/hardware/exampleImageGeneration_wrapper.hdf.
+10:57:12 INFO  : Checking for hwspec changes in the project exampleImageGeneration_wrapper_hw_platform_0.
+10:58:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+10:58:07 INFO  : 'fpga -state' command is executed.
+10:58:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:07 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+10:58:07 INFO  : 'jtag frequency' command is executed.
+10:58:07 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:58:07 INFO  : Context for 'APU' is selected.
+10:58:07 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+10:58:07 INFO  : 'configparams force-mem-access 1' command is executed.
+10:58:07 INFO  : Context for 'APU' is selected.
+10:58:07 INFO  : 'stop' command is executed.
+10:58:08 INFO  : 'ps7_init' command is executed.
+10:58:08 INFO  : 'ps7_post_config' command is executed.
+10:58:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:58:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:58:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:58:10 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+10:58:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+dow D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf
+----------------End of Script----------------
+
+11:23:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+11:23:02 INFO  : 'fpga -state' command is executed.
+11:23:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:23:03 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+11:23:03 INFO  : 'jtag frequency' command is executed.
+11:23:03 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:23:03 INFO  : Context for 'APU' is selected.
+11:23:03 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+11:23:03 INFO  : 'configparams force-mem-access 1' command is executed.
+11:23:03 INFO  : Context for 'APU' is selected.
+11:23:03 INFO  : 'stop' command is executed.
+11:23:03 INFO  : 'ps7_init' command is executed.
+11:23:03 INFO  : 'ps7_post_config' command is executed.
+11:23:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:23:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:23:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:23:04 INFO  : The application 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:23:04 INFO  : 'configparams force-mem-access 0' command is executed.
+11:23:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+dow D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:23:04 INFO  : Memory regions updated for context APU
+11:23:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:23:04 INFO  : 'con' command is executed.
+11:23:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+con
+----------------End of Script----------------
+
+11:23:04 INFO  : Launch script is exported to file 'D:\Projekte\DigMe_ExampleImageGeneration\software\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_exampleimagegeneration.elf_on_local.tcl'
+14:03:41 INFO  : Disconnected from the channel tcfchan#1.
+14:03:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+14:03:43 INFO  : 'fpga -state' command is executed.
+14:03:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:03:43 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+14:03:43 INFO  : 'jtag frequency' command is executed.
+14:03:43 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:03:43 INFO  : Context for 'APU' is selected.
+14:03:44 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+14:03:44 INFO  : 'configparams force-mem-access 1' command is executed.
+14:03:45 INFO  : Context for 'APU' is selected.
+14:03:45 INFO  : 'stop' command is executed.
+14:03:46 INFO  : 'ps7_init' command is executed.
+14:03:46 INFO  : 'ps7_post_config' command is executed.
+14:03:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:03:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:49 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+14:03:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+dow D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf
+----------------End of Script----------------
+
+14:04:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+14:04:13 INFO  : 'fpga -state' command is executed.
+14:04:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:13 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+14:04:13 INFO  : 'jtag frequency' command is executed.
+14:04:13 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:04:13 INFO  : Context for 'APU' is selected.
+14:04:13 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+14:04:13 INFO  : 'configparams force-mem-access 1' command is executed.
+14:04:13 INFO  : Context for 'APU' is selected.
+14:04:14 INFO  : 'stop' command is executed.
+14:04:14 ERROR : AP transaction error, DAP status f0000021
+14:04:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+14:14:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:14:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+14:14:33 ERROR : fpga configuration failed. DONE PIN is not HIGH
+14:14:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:14:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+14:14:41 INFO  : FPGA configured successfully with bitstream "D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/exampleImageGeneration_wrapper.bit"
+14:14:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+14:14:45 INFO  : 'fpga -state' command is executed.
+14:14:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:14:45 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+14:14:45 INFO  : 'jtag frequency' command is executed.
+14:14:45 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:14:45 INFO  : Context for 'APU' is selected.
+14:14:45 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+14:14:45 INFO  : 'configparams force-mem-access 1' command is executed.
+14:14:45 INFO  : Context for 'APU' is selected.
+14:14:45 INFO  : 'stop' command is executed.
+14:14:45 INFO  : 'ps7_init' command is executed.
+14:14:45 INFO  : 'ps7_post_config' command is executed.
+14:14:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:14:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:46 INFO  : The application 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:14:46 INFO  : 'configparams force-mem-access 0' command is executed.
+14:14:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+dow D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:14:46 INFO  : Memory regions updated for context APU
+14:14:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:46 INFO  : 'con' command is executed.
+14:14:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+con
+----------------End of Script----------------
+
+14:14:46 INFO  : Launch script is exported to file 'D:\Projekte\DigMe_ExampleImageGeneration\software\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_exampleimagegeneration.elf_on_local.tcl'
+14:27:54 INFO  : Disconnected from the channel tcfchan#2.
+14:27:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+14:27:55 INFO  : 'fpga -state' command is executed.
+14:27:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:27:55 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+14:27:55 INFO  : 'jtag frequency' command is executed.
+14:27:55 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:27:55 INFO  : Context for 'APU' is selected.
+14:27:57 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+14:27:57 INFO  : 'configparams force-mem-access 1' command is executed.
+14:27:57 INFO  : Context for 'APU' is selected.
+14:27:57 INFO  : 'stop' command is executed.
+14:27:57 INFO  : 'ps7_init' command is executed.
+14:27:57 INFO  : 'ps7_post_config' command is executed.
+14:27:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:27:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:58 INFO  : The application 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:27:58 INFO  : 'configparams force-mem-access 0' command is executed.
+14:27:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+dow D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:27:58 INFO  : Memory regions updated for context APU
+14:27:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:58 INFO  : 'con' command is executed.
+14:27:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+con
+----------------End of Script----------------
+
+14:27:58 INFO  : Launch script is exported to file 'D:\Projekte\DigMe_ExampleImageGeneration\software\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_exampleimagegeneration.elf_on_local.tcl'
+14:28:25 INFO  : Disconnected from the channel tcfchan#3.
+14:28:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+14:28:27 INFO  : 'fpga -state' command is executed.
+14:28:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:28:27 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+14:28:27 INFO  : 'jtag frequency' command is executed.
+14:28:27 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:28:27 INFO  : Context for 'APU' is selected.
+14:28:29 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+14:28:29 INFO  : 'configparams force-mem-access 1' command is executed.
+14:28:29 INFO  : Context for 'APU' is selected.
+14:28:29 INFO  : 'stop' command is executed.
+14:28:29 INFO  : 'ps7_init' command is executed.
+14:28:29 INFO  : 'ps7_post_config' command is executed.
+14:28:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:28:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:28:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:28:30 INFO  : The application 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:28:30 INFO  : 'configparams force-mem-access 0' command is executed.
+14:28:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+dow D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:28:30 INFO  : Memory regions updated for context APU
+14:28:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:28:30 INFO  : 'con' command is executed.
+14:28:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+con
+----------------End of Script----------------
+
+14:28:30 INFO  : Launch script is exported to file 'D:\Projekte\DigMe_ExampleImageGeneration\software\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_exampleimagegeneration.elf_on_local.tcl'
+15:25:27 INFO  : Disconnected from the channel tcfchan#4.
+15:25:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+15:25:28 INFO  : 'fpga -state' command is executed.
+15:25:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:28 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+15:25:28 INFO  : 'jtag frequency' command is executed.
+15:25:28 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:25:28 INFO  : Context for 'APU' is selected.
+15:25:30 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+15:25:30 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:30 INFO  : Context for 'APU' is selected.
+15:25:30 INFO  : 'stop' command is executed.
+15:25:30 INFO  : 'ps7_init' command is executed.
+15:25:30 INFO  : 'ps7_post_config' command is executed.
+15:25:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:25:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:31 INFO  : The application 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:25:31 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+dow D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:25:31 INFO  : Memory regions updated for context APU
+15:25:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:31 INFO  : 'con' command is executed.
+15:25:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+con
+----------------End of Script----------------
+
+15:25:31 INFO  : Launch script is exported to file 'D:\Projekte\DigMe_ExampleImageGeneration\software\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_exampleimagegeneration.elf_on_local.tcl'
+15:28:19 INFO  : Disconnected from the channel tcfchan#5.
+15:28:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248685841" && level==0} -index 1' command is executed.
+15:28:20 INFO  : 'fpga -state' command is executed.
+15:28:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:20 INFO  : Jtag cable 'Digilent Zed 210248685841' is selected.
+15:28:20 INFO  : 'jtag frequency' command is executed.
+15:28:20 INFO  : Sourcing of 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:28:20 INFO  : Context for 'APU' is selected.
+15:28:22 INFO  : Hardware design information is loaded from 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf'.
+15:28:22 INFO  : 'configparams force-mem-access 1' command is executed.
+15:28:22 INFO  : Context for 'APU' is selected.
+15:28:22 INFO  : 'stop' command is executed.
+15:28:22 INFO  : 'ps7_init' command is executed.
+15:28:22 INFO  : 'ps7_post_config' command is executed.
+15:28:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:28:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:23 INFO  : The application 'D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:28:23 INFO  : 'configparams force-mem-access 0' command is executed.
+15:28:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+loadhw -hw D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+dow D:/Projekte/DigMe_ExampleImageGeneration/software/exampleImageGeneration/Debug/exampleImageGeneration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:28:23 INFO  : Memory regions updated for context APU
+15:28:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:23 INFO  : 'con' command is executed.
+15:28:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248685841"} -index 0
+con
+----------------End of Script----------------
+
+15:28:23 INFO  : Launch script is exported to file 'D:\Projekte\DigMe_ExampleImageGeneration\software\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_exampleimagegeneration.elf_on_local.tcl'
+15:28:51 INFO  : Disconnected from the channel tcfchan#6.

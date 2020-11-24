@@ -1,0 +1,25 @@
+/**
+ ******************************************************************************
+ * axiImage.c
+ * Lukas Leuenberger
+ * V1.0.0
+ * 18.12.2019
+ * This file contains some functions to send an image to the programmable logic
+ ******************************************************************************
+ **/
+
+#ifndef _AXIIMAGE_H
+#define _AXIIMAGE_H
+
+/**
+ ******************************************************************************
+ * Define the registers
+ ******************************************************************************
+ **/
+enum {
+  REG_HEIGHT = XPAR_AXIIMAGE_0_BASEADDR,
+  REG_WIDTH = XPAR_AXIIMAGE_0_BASEADDR + 0x04,
+  REG_COLOR = XPAR_AXIIMAGE_0_BASEADDR + 0x08
+};
+
+#endif // _AXIIMAGE_H

@@ -1,0 +1,84 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 10 -x 3050 -y 340 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 10 -x 3050 -y 590 -defaultsOSRD
+preplace port clk_100MHz -pg 1 -lvl 0 -x -10 -y 750 -defaultsOSRD
+preplace port hardReset -pg 1 -lvl 0 -x -10 -y 670 -defaultsOSRD
+preplace port hd_clk -pg 1 -lvl 10 -x 3050 -y 730 -defaultsOSRD
+preplace port hd_scl -pg 1 -lvl 10 -x 3050 -y 670 -defaultsOSRD
+preplace port hd_sda -pg 1 -lvl 10 -x 3050 -y 690 -defaultsOSRD
+preplace port hd_vsync -pg 1 -lvl 10 -x 3050 -y 750 -defaultsOSRD
+preplace port hd_hsync -pg 1 -lvl 10 -x 3050 -y 770 -defaultsOSRD
+preplace port hd_de -pg 1 -lvl 10 -x 3050 -y 810 -defaultsOSRD
+preplace portBus switch -pg 1 -lvl 0 -x -10 -y 600 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 10 -x 3050 -y 610 -defaultsOSRD
+preplace portBus hd_d -pg 1 -lvl 10 -x 3050 -y 790 -defaultsOSRD
+preplace inst roi_0 -pg 1 -lvl 7 -x 2180 -y 820 -defaultsOSRD
+preplace inst sdpRAM_0 -pg 1 -lvl 8 -x 2510 -y 810 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 740 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 390 -y 710 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 3 -x 760 -y 710 -defaultsOSRD
+preplace inst rainbowImage_0 -pg 1 -lvl 5 -x 1490 -y 250 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -x 1490 -y 680 -defaultsOSRD
+preplace inst bmpImage_0 -pg 1 -lvl 5 -x 1490 -y 90 -defaultsOSRD
+preplace inst mux_0 -pg 1 -lvl 6 -x 1880 -y 840 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 760 -y 390 -defaultsOSRD
+preplace inst compImage_0 -pg 1 -lvl 5 -x 1490 -y 810 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1140 -y 460 -defaultsOSRD
+preplace inst axiImage_0 -pg 1 -lvl 5 -x 1490 -y 970 -defaultsOSRD
+preplace inst adv7511_0 -pg 1 -lvl 9 -x 2850 -y 740 -defaultsOSRD
+preplace netloc roi_0_ram_addr_out 1 7 1 N 800
+preplace netloc roi_0_ram_data_out 1 7 1 N 820
+preplace netloc roi_0_ram_wr_en_out 1 7 1 2330 780n
+preplace netloc clk_in1_0_1 1 0 1 NJ 750
+preplace netloc reset_0_1 1 0 2 10 660 210
+preplace netloc clk_wiz_0_locked 1 1 1 200 740n
+preplace netloc clk_wiz_0_clk_out1 1 1 8 200 390 560 300 970 300 1320 590 NJ 590 2030 700 2340 700 2670
+preplace netloc proc_sys_reset_0_peripheral_reset 1 2 1 NJ 710
+preplace netloc util_vector_logic_0_Res 1 3 6 980 320 1300 620 NJ 620 2020 690 NJ 690 2660
+preplace netloc sdpRAM_0_b_data_out 1 8 1 2670 770n
+preplace netloc adv7511_0_ram_addr_out 1 7 3 2350 590 NJ 590 3020
+preplace netloc adv7511_0_hd_clk_out 1 9 1 NJ 730
+preplace netloc adv7511_0_hd_SCL_out 1 9 1 NJ 670
+preplace netloc Net 1 9 1 NJ 690
+preplace netloc adv7511_0_hd_VSync_out 1 9 1 NJ 750
+preplace netloc adv7511_0_hd_HSync_out 1 9 1 NJ 770
+preplace netloc adv7511_0_hd_DE_out 1 9 1 NJ 810
+preplace netloc adv7511_0_hd_D_out 1 9 1 NJ 790
+preplace netloc switch_1 1 0 10 NJ 600 210J 610 NJ 610 NJ 610 1310 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc xlslice_0_Dout 1 5 1 NJ 680
+preplace netloc rainbowImage_0_row_out 1 5 1 1730 220n
+preplace netloc rainbowImage_0_col_out 1 5 1 1710 240n
+preplace netloc rainbowImage_0_d_out 1 5 1 1690 260n
+preplace netloc rainbowImage_0_strobe_out 1 5 1 1670 280n
+preplace netloc compImage_0_row_out 1 5 1 1670 780n
+preplace netloc compImage_0_col_out 1 5 1 1660 800n
+preplace netloc compImage_0_d_out 1 5 1 1650 820n
+preplace netloc compImage_0_strobe_out 1 5 1 1640 840n
+preplace netloc mux_0_row_out 1 6 1 N 810
+preplace netloc mux_0_col_out 1 6 1 N 830
+preplace netloc mux_0_d_out 1 6 1 N 850
+preplace netloc mux_0_strobe_out 1 6 1 N 870
+preplace netloc bmpImage_0_row_out 1 5 1 1740 60n
+preplace netloc bmpImage_0_col_out 1 5 1 1720 80n
+preplace netloc bmpImage_0_strobe_out 1 5 1 1680 120n
+preplace netloc bmpImage_0_d_out 1 5 1 1700 100n
+preplace netloc axiImage_0_row_out 1 5 1 N 940
+preplace netloc axiImage_0_col_out 1 5 1 N 960
+preplace netloc axiImage_0_d_out 1 5 1 N 980
+preplace netloc axiImage_0_strobe_out 1 5 1 N 1000
+preplace netloc clk_wiz_0_clk_out2 1 1 8 220 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 2680J
+preplace netloc processing_system7_0_DDR 1 3 7 960J 330 1330J 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 3 7 990J 340 1310J 350 NJ 350 NJ 350 NJ 350 NJ 350 3030J
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 N 400
+preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 1290 460n
+levelinfo -pg 1 -10 110 390 760 1140 1490 1880 2180 2510 2850 3050
+pagesize -pg 1 -db -bbox -sgen -140 0 3170 1060
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_ps7_cnt":"1"
+}
