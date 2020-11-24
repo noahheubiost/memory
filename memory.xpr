@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/Users/nsheu/OneDrive/Desktop/DIGME/miniprojekt/memory/memory.xpr">
+<Project Version="7" Minor="40" Path="C:/Users/nsheu/OneDrive/Desktop/miniprojekt/memory/memory.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7956a218976a46c39befd7b0033e63b2"/>
@@ -23,7 +23,7 @@
     <Option Name="ActiveSimSet" Val="oledController"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../mulo/project/ip/cpuToCtrl_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../DIGME/miniprojekt/mulo/project/ip/cpuToCtrl_1.0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -60,43 +60,61 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/modules/adv7511/adv7511Controller.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/adv7511/adv7511Controller.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/i2c/i2c.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/i2c/i2c.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/rgb2ycbcr/rgb2ycbcr.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/rgb2ycbcr/rgb2ycbcr.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/rom/rom.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/rom/rom.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/sync/sync.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/sync/sync.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/adv7511/writeToADV7511.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/adv7511/writeToADV7511.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/adv7511/adv7511.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/adv7511/adv7511.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/sdpRAM/sdpRAM.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/roi/roi.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/Source/axiImage/axiImage.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -104,161 +122,147 @@
       </File>
       <File Path="$PSRCDIR/sources_1/bd/cam2hdmi_bd/cam2hdmi_bd.bd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../mulo/project/project/cam2hdmi.srcs/sources_1/bd/cam2hdmi_bd/cam2hdmi_bd.bd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../DIGME/miniprojekt/mulo/project/project/cam2hdmi.srcs/sources_1/bd/cam2hdmi_bd/cam2hdmi_bd.bd"/>
           <Attr Name="ImportTime" Val="1606144685"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="cam2hdmi_bd.bd" FileRelPathName="ip/cam2hdmi_bd_processing_system7_0_0/cam2hdmi_bd_processing_system7_0_0.xci">
-          <Proxy FileSetName="cam2hdmi_bd_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="cam2hdmi_bd.bd" FileRelPathName="ip/cam2hdmi_bd_clk_wiz_0/cam2hdmi_bd_clk_wiz_0.xci">
           <Proxy FileSetName="cam2hdmi_bd_clk_wiz_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="cam2hdmi_bd.bd" FileRelPathName="ip/cam2hdmi_bd_processing_system7_0_0/cam2hdmi_bd_processing_system7_0_0.xci">
+          <Proxy FileSetName="cam2hdmi_bd_processing_system7_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/cam2hdmi_bd/hdl/cam2hdmi_bd_wrapper.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../mulo/project/project/cam2hdmi.srcs/sources_1/bd/cam2hdmi_bd/hdl/cam2hdmi_bd_wrapper.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../DIGME/miniprojekt/mulo/project/project/cam2hdmi.srcs/sources_1/bd/cam2hdmi_bd/hdl/cam2hdmi_bd_wrapper.vhd"/>
           <Attr Name="ImportTime" Val="1605880575"/>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/edgeDetection/edgeDetection.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/edgeDetection/edgeDetection.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/ov7670/ov7670Capture.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ov7670/ov7670Capture.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/ov7670/ov7670Controller.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ov7670/ov7670Controller.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/ov7670/ov7670.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ov7670/ov7670.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/sdpRAM/sdpRAM.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ctrlToLED/ctrlToLED.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/roi/roi.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/packages/image_processing_package.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/ctrlToLED/ctrlToLED.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/selrgb/selrgb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/packages/image_processing_package.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/binaryconv/binaryconv.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/selrgb/selrgb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/grayscale/grayscale.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/binaryconv/binaryconv.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/oled/oledController.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/grayscale/grayscale.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spi.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/oled/oledController.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spiClkDiv.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/spi/spi.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spiController.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/spi/spiClkDiv.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spiShiftRegPiso.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/spi/spiController.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spiShiftRegSipo.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/spi/spiShiftRegPiso.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../mulo/project/modules/spi/spiShiftRegSipo.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../mulo/project/modules/oled/oled.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/oled/oled.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/adv7511/adv7511InitFile.mif">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/adv7511/adv7511InitFile.mif">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/ov7670/ov7670InitFile.mif">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ov7670/ov7670InitFile.mif">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/modules/oled/oledCharFile.mif">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/oled/oledCharFile.mif">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
@@ -270,19 +274,19 @@
     </FileSet>
     <FileSet Name="adv7511Controller" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/adv7511Controller">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/adv7511/adv7511Controller_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/adv7511/adv7511Controller_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/adv7511/adv7511InitFile_tb.mif">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/adv7511/adv7511InitFile_tb.mif">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/adv7511/adv7511Controller_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/adv7511/adv7511Controller_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="adv7511Controller_tb"/>
@@ -294,13 +298,13 @@
     </FileSet>
     <FileSet Name="writeToadv7511" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/writeToadv7511">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/adv7511/writeToadv7511_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/adv7511/writeToadv7511_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/adv7511/writeToadv7511_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/adv7511/writeToadv7511_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="writeToadv7511_tb"/>
@@ -312,13 +316,13 @@
     </FileSet>
     <FileSet Name="ctrlToLED" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/ctrlToLED">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/ctrlToLED/ctrlToLED_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/ctrlToLED/ctrlToLED_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/ctrlToLED/ctrlToLED_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/ctrlToLED/ctrlToLED_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="ctrlToLED_tb"/>
@@ -330,13 +334,13 @@
     </FileSet>
     <FileSet Name="edgeDetection" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/edgeDetection">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/edgeDetection/edgeDetection_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/edgeDetection/edgeDetection_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/edgeDetection/edgeDetection_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/edgeDetection/edgeDetection_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="edgeDetection_tb"/>
@@ -348,13 +352,13 @@
     </FileSet>
     <FileSet Name="i2c" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/i2c">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/i2c/i2c_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/i2c/i2c_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/i2c/i2c_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/i2c/i2c_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="i2c_tb"/>
@@ -366,25 +370,25 @@
     </FileSet>
     <FileSet Name="ov7670Capture" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/ov7670Capture">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/txt_util.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/txt_util.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/ov7670/ov7670Model.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/ov7670/ov7670Model.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/ov7670/ov7670Capture_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/ov7670/ov7670Capture_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/image_full_in.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/image_full_in.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="ov7670Capture_tb"/>
@@ -396,14 +400,14 @@
     </FileSet>
     <FileSet Name="ov7670Controller" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/ov7670Controller">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/ov7670/ov7670Controller_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/ov7670/ov7670Controller_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/ov7670/ov7670Controller_tb.csv"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/ov7670/ov7670InitFile_tb.mif">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/ov7670/ov7670Controller_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/ov7670/ov7670InitFile_tb.mif">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -420,13 +424,13 @@
     </FileSet>
     <FileSet Name="rgb2ycbcr" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/rgb2ycbcr">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/rgb2ycbcr/rgb2ycbcr_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/rgb2ycbcr/rgb2ycbcr_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/rgb2ycbcr/rgb2ycbcr_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/rgb2ycbcr/rgb2ycbcr_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="rgb2ycbcr_tb"/>
@@ -438,19 +442,19 @@
     </FileSet>
     <FileSet Name="rom" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/rom">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/rom/rom_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/rom/rom_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/rom/rom_tb.mif">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/rom/rom_tb.mif">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/rom/rom_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/rom/rom_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="rom_tb"/>
@@ -461,32 +465,32 @@
       </Config>
     </FileSet>
     <FileSet Name="cam2hdmi" Type="Constrs" RelSrcDir="$PSRCDIR/cam2hdmi">
-      <File Path="$PPRDIR/../mulo/project/constraints/cam2hdmi_pins.xdc">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/constraints/cam2hdmi_pins.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/constraints/cam2hdmi_timing.xdc">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/constraints/cam2hdmi_timing.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <Config>
-        <Option Name="TargetConstrsFile" Val="$PPRDIR/../mulo/project/constraints/cam2hdmi_pins.xdc"/>
+        <Option Name="TargetConstrsFile" Val="$PPRDIR/../../DIGME/miniprojekt/mulo/project/constraints/cam2hdmi_pins.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="roi" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/roi">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/roi/roi_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/roi/roi_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/roi/roi_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/roi/roi_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="roi_tb"/>
@@ -498,19 +502,19 @@
     </FileSet>
     <FileSet Name="selrgb" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/selrgb">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/txt_util.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/txt_util.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/selrgb/selrgb_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/selrgb/selrgb_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/image_full_in.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/image_full_in.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="selrgb_tb"/>
@@ -522,19 +526,19 @@
     </FileSet>
     <FileSet Name="binaryconv" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/binaryconv">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/txt_util.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/txt_util.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/binaryconv/binaryconv_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/binaryconv/binaryconv_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/image_full_in.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/image_full_in.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="binaryconv_tb"/>
@@ -546,19 +550,19 @@
     </FileSet>
     <FileSet Name="grayscale" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/grayscale">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/txt_util.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/txt_util.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/grayscale/grayscale_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/grayscale/grayscale_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/image_full_in.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/image_full_in.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="grayscale_tb"/>
@@ -570,13 +574,13 @@
     </FileSet>
     <FileSet Name="sdpRAM" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sdpRAM">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/sdpRAM/sdpRAM_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/sdpRAM/sdpRAM_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/sdpRAM/sdpRAM_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/sdpRAM/sdpRAM_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="sdpRAM_tb"/>
@@ -588,13 +592,13 @@
     </FileSet>
     <FileSet Name="spi" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/spi">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spi_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spi_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spi_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spi_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="spi_tb"/>
@@ -606,13 +610,13 @@
     </FileSet>
     <FileSet Name="oledController" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/oledController">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/oled/oledController_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/oled/oledController_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/oled/oledController_tb.csv"/>
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/oled/oledController_tb.csv"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="oledController_tb"/>
@@ -636,13 +640,13 @@
     </FileSet>
     <FileSet Name="spiClkDiv" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/spiClkDiv">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spiClkDiv_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spiClkDiv_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spiClkDiv_tb.csv">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spiClkDiv_tb.csv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -659,13 +663,13 @@
     </FileSet>
     <FileSet Name="spiController" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/spiController">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spiController_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spiController_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spiController_tb.csv">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spiController_tb.csv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -682,13 +686,13 @@
     </FileSet>
     <FileSet Name="spiShiftRegPiso" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/spiShiftRegPiso">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spiShiftRegPiso_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spiShiftRegPiso_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spiShiftRegPiso_tb.csv">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spiShiftRegPiso_tb.csv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -705,13 +709,13 @@
     </FileSet>
     <FileSet Name="spiShiftRegSipo" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/spiShiftRegSipo">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spiShiftRegSipo_tb.vhd">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spiShiftRegSipo_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mulo/project/testbench/spi/spiShiftRegSipo_tb.csv">
+      <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/testbench/spi/spiShiftRegSipo_tb.csv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
