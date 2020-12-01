@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1606223317" LaunchWriteIncrSynthDcp="true">
+  <File Type="PA-TCL" Name="cam2hdmi_bd_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="cam2hdmi_bd_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="cam2hdmi_bd_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cam2hdmi_bd_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="cam2hdmi_bd_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cam2hdmi_bd_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cam2hdmi_bd_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cam2hdmi_bd_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="cam2hdmi_bd_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/adv7511/adv7511Controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/i2c/i2c.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/rgb2ycbcr/rgb2ycbcr.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/rom/rom.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/sync/sync.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/adv7511/writeToADV7511.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/adv7511/adv7511.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/sdpRAM/sdpRAM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/roi/roi.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Source/axiImage/axiImage.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/cam2hdmi_bd/cam2hdmi_bd.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DIGME/miniprojekt/mulo/project/project/cam2hdmi.srcs/sources_1/bd/cam2hdmi_bd/cam2hdmi_bd.bd"/>
+        <Attr Name="ImportTime" Val="1606144685"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/cam2hdmi_bd/hdl/cam2hdmi_bd_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../DIGME/miniprojekt/mulo/project/project/cam2hdmi.srcs/sources_1/bd/cam2hdmi_bd/hdl/cam2hdmi_bd_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1605880575"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/edgeDetection/edgeDetection.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ov7670/ov7670Capture.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ov7670/ov7670Controller.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ov7670/ov7670.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ctrlToLED/ctrlToLED.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/packages/image_processing_package.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/selrgb/selrgb.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/binaryconv/binaryconv.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/grayscale/grayscale.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/oled/oledController.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spiClkDiv.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spiController.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spiShiftRegPiso.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/spi/spiShiftRegSipo.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/oled/oled.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/adv7511/adv7511InitFile.mif">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/ov7670/ov7670InitFile.mif">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/modules/oled/oledCharFile.mif">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cam2hdmi_bd_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/cam2hdmi">
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/constraints/cam2hdmi_pins.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../DIGME/miniprojekt/mulo/project/constraints/cam2hdmi_timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../../DIGME/miniprojekt/mulo/project/constraints/cam2hdmi_pins.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_sdpRAM_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_adv7511_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_roi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cam2hdmi_bd_axiImage_0_0"/>
+</GenRun>

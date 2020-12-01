@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 24 14:06:27 2020
+# Process ID: 18056
+# Current directory: C:/Users/nsheu/OneDrive/Desktop/miniprojekt/memory/memory.runs/cam2hdmi_bd_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log cam2hdmi_bd_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam2hdmi_bd_processing_system7_0_0.tcl
+# Log file: C:/Users/nsheu/OneDrive/Desktop/miniprojekt/memory/memory.runs/cam2hdmi_bd_processing_system7_0_0_synth_1/cam2hdmi_bd_processing_system7_0_0.vds
+# Journal file: C:/Users/nsheu/OneDrive/Desktop/miniprojekt/memory/memory.runs/cam2hdmi_bd_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cam2hdmi_bd_processing_system7_0_0.tcl -notrace

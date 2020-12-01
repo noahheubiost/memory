@@ -1,0 +1,381 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Nov 24 14:13:10 2020
+| Host         : DESKTOP-38O5VOH running 64-bit major release  (build 9200)
+| Command      : report_methodology -file cam2hdmi_bd_wrapper_methodology_drc_routed.rpt -pb cam2hdmi_bd_wrapper_methodology_drc_routed.pb -rpx cam2hdmi_bd_wrapper_methodology_drc_routed.rpx
+| Design       : cam2hdmi_bd_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 69
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 49         |
+| TIMING-18 | Warning          | Missing input or output delay | 20         |
++-----------+------------------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/arg[-1111111108]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/arg[-1111111108]__0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage0_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[-1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[-2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[-3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cbStage1_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cb_out_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cb_out_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cb_out_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cb_out_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cb_out_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cb_out_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cb_out_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cb_out_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/crStage0_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/crStage1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/crStage1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/crStage1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/crStage1_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/crStage1_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cr_out_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cr_out_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cr_out_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cr_out_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cr_out_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cr_out_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cr_out_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/cr_out_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/yStage0_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/yStage1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/yStage1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/yStage1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/yStage1_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/yStage1_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/y_out_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/y_out_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/y_out_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/y_out_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/y_out_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/y_out_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/y_out_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin cam2hdmi_bd_i/adv7511_0/U0/inst_rgb2ycbcr/y_out_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btns_5bits_0_tri_i[0] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on btns_5bits_0_tri_i[1] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on btns_5bits_0_tri_i[2] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on btns_5bits_0_tri_i[3] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on btns_5bits_0_tri_i[4] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on hardReset relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on hd_sda relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on cam_pwdn[0] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on hd_d[10] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on hd_d[11] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on hd_d[12] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on hd_d[13] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on hd_d[14] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on hd_d[15] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on hd_d[8] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on hd_d[9] relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on hd_de relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on hd_hsync relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on hd_scl relative to clock(s) clk_100MHz
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on hd_vsync relative to clock(s) clk_100MHz
+Related violations: <none>
+
+
